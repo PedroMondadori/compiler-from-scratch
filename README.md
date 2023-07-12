@@ -10,6 +10,20 @@ A block is also syntactically considered as a command, and it can appear in plac
 
 Additionally, the language supports an empty command.
 
+# Requirements
+
+To build CFS you need to have installed:
+- A C compiler (The project is configured to use gcc)
+- Make
+- Bison (yacc)
+- Flex (lex)
+
+```
+sudo apt install build-essentials
+sudo apt install bison
+sudo apt install flex
+```
+
 # Usage
 
 Compile the `CFS` compiler:
@@ -187,7 +201,7 @@ int add(int a, int b) {
 
 int main() {
     result = add(2, 3);
-    print(resutl);
+    print(result);
 }
 ```
 
@@ -223,8 +237,8 @@ while BOOLEAN_EXPRESSION {
 };
 ```
 
-- For the `if then else` construct, the `then` clause can be ommited.
-- For `if`, `else` and `while` constructs, curly braces ("{" and "}") can be ommited if the following expression is a single command.
+- For the `if then else` construct, the `then` clause can be omitted.
+- For `if`, `else` and `while` constructs, curly braces ("{" and "}") can be omitted if the following expression is a single command.
 
 ## Todo
 
