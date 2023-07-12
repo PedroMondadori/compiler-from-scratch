@@ -1,12 +1,10 @@
 #!/bin/sh
 
-# EXAMPLE_TO_BE_RUN="hello_world"
-EXAMPLE_TO_BE_RUN="demo"
+EXAMPLE_TO_BE_RUN="hello_world"
+# EXAMPLE_TO_BE_RUN="demo"
 
 INPUT_FILE_PATH="./examples/${EXAMPLE_TO_BE_RUN}.cfs"
 OUTPUT_FILE_PATH="${EXAMPLE_TO_BE_RUN}_decompiled.cfs"
-
-make clean && make
 
 printf "\n"
 
@@ -15,7 +13,7 @@ then
     mv "./${EXAMPLE_TO_BE_RUN}_decompiled.cfs" ./bin/
     mv ./out.s ./bin/
 
-    mkdir ./examples/bin/
+    mkdir -p ./examples/bin/
 
     gcc ./bin/out.s -o "./examples/bin/${EXAMPLE_TO_BE_RUN}"
 
