@@ -1,0 +1,13 @@
+# vscode configs
+/.vscode/
+
+# intermediate files used during compilation
+/build/
+
+# binaries
+/bin/
+
+# compiled examples binaries
+/examples/bin/
+# old examples
+/examples/old/

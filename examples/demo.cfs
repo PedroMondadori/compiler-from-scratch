@@ -1,0 +1,36 @@
+int a: 0;
+int b: 0;
+int i: 0;
+int aux: 0;
+int result: 0;
+
+int sum()
+{
+    i = 0;
+    while(i < 100)
+    {
+        aux = aux + a + b;
+        i = i + 1;
+    };
+
+    return aux;
+}
+
+int main()
+{
+    \\ This is a comment
+    print "Input a number: ";
+
+    a = read;
+
+    print "Input another number: ";
+
+    b = read;
+
+    result = sum();
+    
+    print "Adding your numbers to each other 100 times...";
+
+    print "Result is...";
+    print(result);
+}
